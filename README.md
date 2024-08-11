@@ -7,9 +7,9 @@ Ensure you have MySQL installed and running. Update the following properties in 
 
 ``` properties
 # MySQL database configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/bookstore      //Here you can change the database name if needed
+spring.datasource.url=jdbc:mysql://localhost:3306/bookstore      #Here you can change the database name if needed
 spring.datasource.username=root
-spring.datasource.password=pugazh //use your own mysql password
+spring.datasource.password=pugazh                                #use your own mysql password
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
