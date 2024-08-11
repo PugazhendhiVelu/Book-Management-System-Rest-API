@@ -5,7 +5,7 @@ This repository contains the source code for a Book Management System, a RESTful
 
 Ensure you have MySQL installed and running. Update the following properties in your `application.properties` file to configure the connection to your MySQL database:
 
-## properties
+``` properties
 # MySQL database configuration
 spring.datasource.url=jdbc:mysql://localhost:3306/bookstore      //Here you can change the database name if needed
 spring.datasource.username=root
@@ -14,6 +14,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+```
 
 
 ## Testing the API
