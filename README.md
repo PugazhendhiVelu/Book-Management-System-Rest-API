@@ -1,6 +1,20 @@
 # Book-Management-System-Rest-API
 This repository contains the source code for a Book Management System, a RESTful API built using Java Spring Boot, Spring Data JPA, and MySQL. The API provides a comprehensive set of web services to manage a collection of books, supporting full CRUD (Create, Read, Update, Delete) operations
 
+## MySQL Configuration
+
+Ensure you have MySQL installed and running. Update the following properties in your `application.properties` file to configure the connection to your MySQL database:
+
+```properties
+# MySQL database configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/bookstore      //Here it is if you want to change the database name
+spring.datasource.username=root
+spring.datasource.password=pugazh //use your password
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
 ## Testing the API
 
 You can test the Book Management System API using tools like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/). These tools allow you to easily send HTTP requests to the API and inspect the responses.
